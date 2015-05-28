@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LittleDenver</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome_1">Merupakan aplikasi yang membantu anda untuk mengamati tumbuh kembang anak anda sesuai dengan umur anak.</string>
+    <string name="welcome_2">Aplikasi ini hanya memberikan referensi tentang item apa saja yang terdapat dalam tes Denver II yang dapat anda gunakan sebagai rujukan kepada ahli</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+</resources>
