@@ -59,7 +59,7 @@
         android:paddingRight="10dp"
         android:paddingBottom="0dp"
         android:paddingTop="0dp"
-        android:drawableRight="@drawable/calendar112"
+        android:drawableRight="@drawable/calendar"
         android:background="@drawable/my_input"
         android:id="@+id/button2"
         android:layout_gravity="center_horizontal"
@@ -75,22 +75,33 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Laki - laki"
+            android:id="@+id/radioButton"
+
+            android:layout_weight="1"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"
+            android:id="@+id/radioButton2"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="5dp"
 
         >
-
-        <Spinner
-            android:layout_width="0px"
-            android:layout_weight="1"
-            android:layout_marginRight="2.5dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/my_button"
-            android:id="@+id/spinner1"
-            android:paddingBottom="@dimen/abc_button_inset_vertical_material"
-            android:paddingTop="@dimen/abc_button_inset_vertical_material"
-            android:theme="@style/Animation.AppCompat.DropDownUp"
-            android:spinnerMode="dialog" />
 
         <EditText
             android:layout_width="0dp"
@@ -102,12 +113,33 @@
             android:paddingTop="10dp"
             android:paddingRight="10dp"
             android:paddingLeft="10dp"
+            android:layout_marginRight="2.5dp"
+            android:drawableRight="@drawable/arrow"
             android:textStyle="bold"
             android:hint="BERAT (KG)"
             android:layout_centerVertical="true"
             android:layout_alignLeft="@+id/editText"
             android:layout_alignStart="@+id/editText"
-            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:inputType="numberSigned" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editText2"
+            android:background="@drawable/my_input"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:drawableRight="@drawable/arrow"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="2.5dp"
+            android:hint="TINGGI (CM)"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/editText"
+            android:layout_alignStart="@+id/editText"
             android:layout_weight="1"
             android:inputType="numberSigned" />
 
@@ -123,25 +155,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:id="@+id/editText2"
-            android:background="@drawable/my_input"
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp"
-            android:paddingRight="10dp"
-            android:paddingLeft="10dp"
-            android:textStyle="bold"
-            android:hint="TINGGI (CM)"
-            android:layout_centerVertical="true"
-            android:layout_alignLeft="@+id/editText"
-            android:layout_alignStart="@+id/editText"
-            android:layout_marginBottom="5dp"
-            android:layout_weight="1"
-            android:inputType="numberSigned" />
-
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
+            android:drawableRight="@drawable/arrow"
             android:id="@+id/editText3"
             android:background="@drawable/my_input"
             android:paddingBottom="10dp"
@@ -149,7 +163,7 @@
             android:paddingRight="10dp"
             android:paddingLeft="10dp"
             android:textStyle="bold"
-            android:hint="BERAT (KG)"
+            android:hint="LINGKAR KEPALA (CM)"
             android:layout_centerVertical="true"
             android:layout_alignLeft="@+id/editText"
             android:layout_alignStart="@+id/editText"
