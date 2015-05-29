@@ -10,8 +10,6 @@
     android:orientation="vertical"
     android:weightSum="1">
 
-
-
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -19,7 +17,6 @@
         android:ems="10"
         android:id="@+id/nama"
         android:background="@drawable/my_input"
-        android:layout_marginTop="163dp"
         android:paddingBottom="10dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
@@ -75,21 +72,26 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        >
 
         <RadioButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Laki - laki"
             android:id="@+id/radioButton"
-
+            android:buttonTint="@color/switch_thumb_material_light"
             android:layout_weight="1"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            />
 
         <RadioButton
+            android:buttonTint="@color/switch_thumb_material_light"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Perempuan"
+            android:textColor="#FFFFFF"
             android:id="@+id/radioButton2"
             android:layout_weight="1" />
     </LinearLayout>
