@@ -6,4 +6,9 @@
     <string name="welcome_1">Merupakan aplikasi yang membantu anda untuk mengamati tumbuh kembang anak anda sesuai dengan umur anak.</string>
     <string name="welcome_2">Aplikasi ini hanya memberikan referensi tentang item apa saja yang terdapat dalam tes Denver II yang dapat anda gunakan sebagai rujukan kepada ahli</string>
     <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
 </resources>

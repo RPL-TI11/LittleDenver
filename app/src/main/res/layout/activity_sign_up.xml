@@ -10,6 +10,16 @@
     android:orientation="vertical"
     android:weightSum="1">
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:src="@drawable/camera3"
+        android:background="@null"
+        android:onClick="captureBaby"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal" />
+
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -23,6 +33,7 @@
         android:paddingLeft="10dp"
         android:textStyle="bold"
         android:hint="NAMA LENGKAP"
+        android:textSize="16px"
         android:layout_marginBottom="5dp"
         />
 
@@ -36,6 +47,8 @@
         android:paddingBottom="10dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
+        android:textSize="16px"
+
         android:paddingLeft="10dp"
         android:textStyle="bold"
 
@@ -49,18 +62,16 @@
 
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="32dp"
         android:text="TANGGAL LAHIR"
         android:gravity="left|center_vertical"
         android:paddingLeft="10dp"
+        android:textSize="18px"
+android:drawableRight="@drawable/calendar"
         android:paddingRight="10dp"
-        android:paddingBottom="0dp"
-        android:paddingTop="0dp"
-        android:drawableRight="@drawable/calendar"
         android:background="@drawable/my_input"
         android:id="@+id/button2"
         android:layout_gravity="center_horizontal"
-        android:textSize="18dp"
         android:onClick="showDatePickerDialog"
         android:textColor="#939393"
         android:textStyle="bold"
@@ -68,7 +79,7 @@
 
         />
 
-    <LinearLayout
+    <RadioGroup
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -81,20 +92,20 @@
             android:layout_height="wrap_content"
             android:text="Laki - laki"
             android:id="@+id/radioButton"
-            android:buttonTint="@color/switch_thumb_material_light"
+            android:buttonTint="#FFFFFF"
             android:layout_weight="1"
             android:textColor="#FFFFFF"
             />
 
         <RadioButton
-            android:buttonTint="@color/switch_thumb_material_light"
+            android:buttonTint="#FFFFFF"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Perempuan"
             android:textColor="#FFFFFF"
             android:id="@+id/radioButton2"
             android:layout_weight="1" />
-    </LinearLayout>
+    </RadioGroup>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -109,14 +120,17 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:drawableRight="@drawable/arrow"
+
             android:id="@+id/editText"
             android:background="@drawable/my_input"
             android:paddingBottom="10dp"
             android:paddingTop="10dp"
             android:paddingRight="10dp"
+            android:textSize="16px"
+
             android:paddingLeft="10dp"
             android:layout_marginRight="2.5dp"
-            android:drawableRight="@drawable/arrow"
             android:textStyle="bold"
             android:hint="BERAT (KG)"
             android:layout_centerVertical="true"
@@ -131,9 +145,11 @@
             android:ems="10"
             android:id="@+id/editText2"
             android:background="@drawable/my_input"
+            android:textSize="16px"
+            android:drawableRight="@drawable/arrow"
+
             android:paddingBottom="10dp"
             android:paddingTop="10dp"
-            android:drawableRight="@drawable/arrow"
             android:paddingRight="10dp"
             android:paddingLeft="10dp"
             android:textStyle="bold"
@@ -157,14 +173,16 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:drawableRight="@drawable/arrow"
             android:id="@+id/editText3"
             android:background="@drawable/my_input"
             android:paddingBottom="10dp"
             android:paddingTop="10dp"
             android:paddingRight="10dp"
             android:paddingLeft="10dp"
+            android:drawableRight="@drawable/arrow"
             android:textStyle="bold"
+            android:textSize="16px"
+
             android:hint="LINGKAR KEPALA (CM)"
             android:layout_centerVertical="true"
             android:layout_alignLeft="@+id/editText"
@@ -187,7 +205,6 @@
         android:layout_marginTop="25dp"
         android:layout_below="@+id/welcome_2"
         android:layout_centerHorizontal="true"
-        android:onClick="gettingStarted"
         android:layout_gravity="center_horizontal" />
 
 
