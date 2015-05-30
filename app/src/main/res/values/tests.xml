@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tests">
+
+        <item name="personal-sosial">Personal Sosial</item>
+        <item name="motorik-halus">Motorik Halus</item>
+        <item name="bahasa">Bahasa</item>
+        <item name="motorik-kasar">Motorik Kasar</item>
+
+    </string-array>
+
+</resources>

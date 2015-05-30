@@ -88,7 +88,9 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             }
         });
     }
-
+    public void loadTesItem(View v){
+        getLayoutInflater().inflate(R.layout.test_item_fragment, viewPager);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
