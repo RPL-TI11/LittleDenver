@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+    <!-- everything you already have -->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -350,4 +356,11 @@
         </LinearLayout>
     </LinearLayout>
 
+    <FrameLayout
+        android:id="@+id/cobaframe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"></FrameLayout>
+
 </RelativeLayout>
+</ScrollView>

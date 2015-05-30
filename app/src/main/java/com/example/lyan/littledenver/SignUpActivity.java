@@ -44,6 +44,7 @@ public class SignUpActivity extends Activity {
 
     public void showDatePickerDialog(View v) {
         DialogFragment newFragment = new DatePickerFragment();
+
         newFragment.show(getFragmentManager(), "datePicker");
     }
 

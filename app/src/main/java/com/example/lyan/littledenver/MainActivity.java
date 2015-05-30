@@ -13,12 +13,14 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Gravity;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -61,10 +63,23 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         actionBar.setHomeButtonEnabled(false);
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         // Adding Tabs
+        int i = 0;
         for (String tab_name : tabs) {
-            actionBar.addTab(actionBar.newTab().setIcon(R.drawable.tes)
-                    .setTabListener(this));
-
+            switch (i){
+                case 0:
+                    actionBar.addTab(actionBar.newTab().setIcon(R.drawable.tes).setTabListener(this));
+                    break;
+                case 1:
+                    actionBar.addTab(actionBar.newTab().setIcon(R.drawable.abc).setTabListener(this));
+                    break;
+                case 2:
+                    actionBar.addTab(actionBar.newTab().setIcon(R.drawable.gallery).setTabListener(this));
+                    break;
+                case 3:
+                    actionBar.addTab(actionBar.newTab().setIcon(R.drawable.profile).setTabListener(this));
+                    break;
+            }
+            i++;
         }
 
         /**
@@ -87,10 +102,21 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             public void onPageScrollStateChanged(int arg0) {
             }
         });
+
     }
-    public void loadTesItem(View v){
-        getLayoutInflater().inflate(R.layout.test_item_fragment, viewPager);
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event)  {
+        if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
+            FrameLayout frameLayout = (FrameLayout) findViewById(R.id.cobaframe);
+            frameLayout.setAlpha(0);
+            return true;
+        }
+
+        return super.onKeyDown(keyCode, event);
     }
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -201,6 +227,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             View rootView = inflater.inflate(R.layout.fragment_main, container, false);
             return rootView;
         }
+
     }
 
 }

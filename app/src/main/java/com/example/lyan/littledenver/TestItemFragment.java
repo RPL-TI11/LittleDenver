@@ -18,4 +18,19 @@ public class TestItemFragment extends Fragment {
 
         return rootView;
     }
+
+    public static TestItemFragment newInstance(int index) {
+        TestItemFragment f = new TestItemFragment();
+
+        // Supply index input as an argument.
+        Bundle args = new Bundle();
+        args.putInt("index", index);
+        f.setArguments(args);
+
+        return f;
+    }
+
+    public int getShownIndex() {
+        return getArguments().getInt("index", 0);
+    }
 }
