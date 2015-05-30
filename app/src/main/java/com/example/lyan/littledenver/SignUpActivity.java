@@ -52,4 +52,11 @@ public class SignUpActivity extends Activity {
         startActivity(intent);
     }
 
+    /** Called when the user clicks the Send button */
+    public void goToMain(View view) {
+        // Do something in response to button
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
 }

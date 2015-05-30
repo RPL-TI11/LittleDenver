@@ -204,6 +204,7 @@ android:drawableRight="@drawable/calendar"
         android:textColor="#ff08ab9e"
         android:layout_marginTop="25dp"
         android:layout_below="@+id/welcome_2"
+        android:onClick="goToMain"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal" />
 
