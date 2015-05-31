@@ -16,17 +16,20 @@ import android.widget.TextView;
 public class TestFragment extends Fragment {
     public FragmentTransaction ft;
     public ViewGroup ctr;
+    View rootView;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ctr = container;
-        View rootView = inflater.inflate(R.layout.fragment_test, container, false);
+        rootView = inflater.inflate(R.layout.fragment_test, container, false);
         TextView tv8 = (TextView) rootView.findViewById(R.id.textView8);
 
         tv8.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
+                System.out.println("Bisaaaaaa");
+
                 TestItemFragment testItemFragment = new TestItemFragment();
 
                     // Make new fragment to show this selection.
@@ -43,8 +46,10 @@ public class TestFragment extends Fragment {
 
             }
         });
+
         return rootView;
     }
+
 
 
 

@@ -1,16 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#17df0d">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-    <TextView android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Design Movies Screen"
-        android:textSize="20dp"
-        android:layout_centerInParent="true"/>
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingBottom="20dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/kid_1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView3"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:src="@drawable/kid_2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView4"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:src="@drawable/kid_3"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView5"
+                android:layout_weight="1"
+                android:paddingBottom="0dp"
+                android:padding="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:src="@drawable/kid_4"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView6"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:src="@drawable/kid_5"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView7"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:src="@drawable/kid_6"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView8"
+                android:layout_weight="1"
+                android:paddingBottom="0dp"
+                android:padding="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false">
+
+            <ImageView
+                android:src="@drawable/kid_7"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView9"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:src="@drawable/kid_8"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView10"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:src="@drawable/kid_9"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView11"
+                android:layout_weight="1"
+                android:paddingBottom="0dp"
+                android:padding="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:src="@drawable/kid_10"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView12"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:src="@drawable/kid_11"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView13"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:src="@drawable/kid_12"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageView14"
+                android:layout_weight="1"
+                android:paddingBottom="0dp"
+                android:padding="0dp" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>
+    </ScrollView>

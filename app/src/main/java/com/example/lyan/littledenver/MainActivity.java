@@ -2,6 +2,7 @@ package com.example.lyan.littledenver;
 
 import java.util.Locale;
 
+import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.Fragment;
@@ -40,8 +41,8 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
     SectionsPagerAdapter mSectionsPagerAdapter;
 
     private ViewPager viewPager;
-    private TabsPagerAdapter mAdapter;
-    private ActionBar actionBar;
+    public TabsPagerAdapter mAdapter;
+    public static ActionBar actionBar;
     // Tab titles
     private String[] tabs = { "Tes Denver", "Task", "Gallery", "Profile"};
     /**
@@ -82,6 +83,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
             i++;
         }
 
+
         /**
          * on swiping the viewpager make respective tab selected
          * */
@@ -104,6 +106,7 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         });
 
     }
+
 
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event)  {
@@ -132,7 +135,17 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_about) {
+            Intent intent = new Intent(this, About.class);
+            startActivity(intent);
+            return true;
+        }else if(id == R.id.action_faq){
+            Intent intent = new Intent(this, Faq.class);
+            startActivity(intent);
+            return true;
+        }else if(id == R.id.action_feedback){
+            Intent intent = new Intent(this, Feedback.class);
+            startActivity(intent);
             return true;
         }
 
